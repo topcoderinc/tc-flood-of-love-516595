@@ -1,0 +1,23 @@
+html
+  head
+    title Flood of Love Valentine's Day Fun Challenge: Madlibs!
+    script(src='/scripts/jquery.js')
+    script(src='scripts/behavior.js')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/stylesheets/normalize.css')
+    link(rel='stylesheet', href='/stylesheets/component.css')
+  body
+    div(class='container')
+      header(class="madlibs-header")
+       h1 Flood of Love Valentine's Day
+          span Love is in the air, let's play Madlibs!
+
+      section
+        form(id="theForm" class="simform" autocomplete="off")
+          each placeholder,index in words
+              div(id=index)
+                span
+                  label(for=index) Please inform a...
+                input(id=index name=index placeholder=placeholder hidden)
+          div(id='text' hidden)= story
+          a(href='/') Start over

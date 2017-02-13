@@ -1,0 +1,13 @@
+Hey, this is my project! It works on NodeJS.
+
+To run it:
+
+1 - run "node apm install" within the project folder just in case.
+2 - "npm start" to start the server, then go to http://localhost:3000.
+
+To add stories, just add them in the "stories" folder, following the model:
+- Words to be informed by the user must appear between << and >> (the word's class must appear between those symbols).
+
+Have fun!
+
+- Henrique

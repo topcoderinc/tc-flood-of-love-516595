@@ -1,0 +1,17 @@
+{
+  "name": "@henriqdp/madlibs",
+  "version": "0.0.1",
+  "description": "My version of the word game \"Madlibs\" for the Topcoder Challenge",
+  "main": "main.js",
+  "author": "@henriqdp",
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "express": "^4.14.1",
+    "pug": "^2.0.0-beta11"
+  },
+  "repository": "https://github.com/henriqdp/madlibs",
+  "license": "GPL-1.0",
+  "scripts": {
+    "start": "node main.js"
+  }
+}
