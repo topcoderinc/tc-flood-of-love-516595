@@ -66,7 +66,7 @@ app.get('/stylesheets/:name', function (req, res, next) {
 });
 
 
-app.listen(3000, function(err){
+app.listen((proccess.env.PORT || 3000), function(err){
   if(err){
     console.log("Some very unexplainable error ocurred.")
   }
