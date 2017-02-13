@@ -65,12 +65,12 @@ app.get('/stylesheets/:name', function (req, res, next) {
 
 });
 
-
-app.listen((proccess.env.PORT || 3000), function(err){
+let port=(process.env.PORT || 3000);
+app.listen(port, function(err){
   if(err){
-    console.log("Some very unexplainable error ocurred.")
+    console.log("Some very unexplainable error ocurred.");
   }
   else{
-    console.log("We're up and listening on port 3000.")
+    console.log(`We're up and listening on port ${port}.`);
   }
 })
